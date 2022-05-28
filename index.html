@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<!-- Designined by samgenius -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Responsive Portfolio Website | CodingLab </title>
+    <title>samgenius portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleis.com??family=Popp ins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,6 +12,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
+  <div class="container">
   <!-- Move to up button -->
   <div class="scroll-button">
     <a href="#home"><i class="fas fa-arrow-up"></i></a>
@@ -55,6 +56,7 @@
      </div>
    </div>
  </section>
+</div>
 
 <!-- About Section Start -->
 <section class="about" id="about">
@@ -121,6 +123,10 @@
         <div class="topic">Graphics</div>
         <div class="per">90%</div>
       </div>
+      <div class="box">
+        <div class="topic">Video Editing</div>
+        <div class="per">50%</div>
+      </div>
      </div>
    </div>
  </div>
@@ -179,16 +185,77 @@
 
 <!-- Contact Me section Start -->
 <section class="contact" id="contact">
-  <div class="content">
-    <div class="title"><span>Contact Me</span></div>
-    <div class="text">
-      <div class="topic">Have Any Project?</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.</p>
-      <div class="button">
-        <button>Let's Chat</button>
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="topic">Have Any Project?</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.</p>
+        <div class="button">
+          <button><a href="tel:+2348165772049">Let's Chat</a></button>
+        </div>
+      </div>
+    </div><center><hr color="blue" width="1000px" align-item="center"></center>
+    <section class="contact_area section_gap">
+      <div class="container">
+          <div class="contact_info">
+              <div class="info_item">
+                  <i class="fa fa-home"></i>
+                  <h6>Ogun State, Nigeria</h6>
+                  <p>Obafemi Owode Local Government</p>
+              </div>
+              <div class="info_item">
+                  <i class="fa fa-phone"></i>
+                  <h6><a href="tel:+2348165772049">+2348165772049</a></h6>
+                  <p>Mon to Sat 9am to 6 pm</p>
+              </div>
+              <div class="info_item">
+                  <i class="fa fa-envelope"></i>
+                  <h6><a href="mailto:olamiflowsamsax@gmail.com">olamiflowsamsax13@gmail.com</a></h6>
+                  <p>Send us your query anytime!</p>
+              </div>
+          </div>
+          <form class="row contact_form" action="https://formsubmit.co/olamiflowsamsax13@gmail.com" method="post" id="contactForm"
+                      novalidate="novalidate">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                          </div>
+                          <div class="form-group">
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" required>
+                          </div>
+
+                      </div>
+                  <div class="col-md-7">
+                      <div class="message">
+                          <div class="form-group">
+                              <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message" required></textarea>
+                          </div>
+                      </div>
+                      <a href="index.html">
+                      <div class="col-md-12 text-right">
+                          <a href="thankyou.html"><button type="submit" value="submit" class="primary-btn"><i class="fa fa-send"></i></button></a>
+                      </div>
+                      </a>
+                    </div>
+                      
+          </form>
+      </div>
+    </section>
+
+    <center>
+    <div class="mapouter">
+      <div class="gmap_canvas">
+          <iframe width="700" height="379" id="gmap_canvas" src="https://maps.google.com/maps?q=Ibafo&t=k&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <a href="https://123movies-to.org"></a><br>
+          <style>.mapouter{position:relative; top: 150px;}</style>
+          <a href="https://www.embedgooglemap.net">how to embed a google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:479px;width:923px;}
+          </style>
       </div>
     </div>
-  </div>
+  </center>
 </section>
 
 <!-- Footer Section Start -->

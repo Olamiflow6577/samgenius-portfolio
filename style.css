@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+.container{
+  animation: expand .8s ease forwards;
+  transition: all .8s ease;
+}
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 10px;
@@ -24,6 +29,27 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #4070f4;
 }
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
 /* navbar styling */
 nav{
   position: fixed;
@@ -48,6 +74,7 @@ nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
   color: #4070f4;
+  transform: translateY(30deg);
 }
 nav.sticky .navbar .logo a{
   color: #fff;
@@ -116,6 +143,8 @@ nav.sticky .menu-btn{
   background-position: center;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+  transform: translateY(50px);
+  animation: slideUp .8s ease forwards .8s;
 }
 .home .home-content{
   width: 90%;
@@ -124,6 +153,10 @@ nav.sticky .menu-btn{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.home .text{
+  transform: translateY(100px);
+  animation: slideIn .8s ease-in-out forwards 1s;
 }
 .home .text-one{
   font-size: 35px;
@@ -159,6 +192,8 @@ nav.sticky .menu-btn{
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
 }
 .home .button button:hover{
   border-color: #4070f4;
@@ -398,6 +433,43 @@ footer .text span a:hover{
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
 }
+.logos{
+  position: relative;
+  top: 500px;
+  background-color: rgb(59, 82, 187);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+  .col-md-12 .primary-btn{
+  background: #e45447;
+  bottom: 0px;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  margin-left: 200px;
+  border: 1px solid #000000;
+  }
+  .contact_form .primary-btn:hover {
+  color: #000;
+  border: 2px solid #165ebb;
+  background: transparent; 
+  }
+  
+  
+  .contact_form .form-group textarea.form-control {
+  position: relative;
+  height: 100px;
+  width: 235px; 
+  }
+  .pics{
+  background: rgb(24, 22, 5);
+  border-radius: 30px;
+  padding: 0px 0 0px 0;
+  }
+  .buttons .icon :nth-child(1){
+  color: rgb(0, 0, 0);
+  }
 .social-links1{
   margin-right: 20px;
   margin-bottom: 20px;
@@ -518,6 +590,10 @@ footer .text span a:hover{
   section .content{
     width: 85%;
   }
+  .mapouter{
+    position: relative;
+    width: 85%;
+  }
 }
 @media (max-width: 1000px) {
   .about .about-details{
@@ -537,11 +613,28 @@ footer .text span a:hover{
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
+  .mapouter{
+    position: relative;
+    width: 65%;
+    right: 250px;
+  }
 }
 @media (max-width: 900px) {
   .about .left img{
     height: 350px;
     width: 350px;
+  }
+  .mapouter{
+    position: relative;
+    width: 55%;
+    right: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .mapouter{
+    position: relative;
+    width: 55%;
+    right: 380px;
   }
 }
 
@@ -607,7 +700,20 @@ footer .text span a:hover{
   }
   .contact .text{
     width: 100%;
+  }
+  .mapouter{
+    position: relative;
+    width: 55%;
+    right: 380px;
+  }
+  .mapouter .gmap_canvas iframe{
+    width: 500px;
+  }
 }
+
+@media (max-width: 700px) {
+  .mapouter{
+    display: none;}
 }
 
 @media (max-width: 500px){
@@ -620,5 +726,8 @@ footer .text span a:hover{
   .skills-details .boxes .per{
     font-size: 50px;
     color: #4070f4;
+  }
+  .mapouter{
+    display: none;
   }
 }
