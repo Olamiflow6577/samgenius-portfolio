@@ -358,6 +358,43 @@ section .button button:hover{
   cursor: default;
   transition: all 0.4s ease;
 }
+#box1{
+  background-image: url('images/programmer\ setup.png');
+  background-size: cover;
+  
+}
+#box2{
+  background-image: url('images/graphics\ designs.jpg');
+  background-size: cover;
+}
+#box3{
+  background-image: url('images/marketing.jpg');
+  background-size: cover;
+}
+#box4{
+  background-image: url('images/maths\ equation.jpg');
+  background-size: cover;
+}
+#box5{
+  background-image: url('images/video\ edit.jpg');
+  background-size: cover;
+}
+#box6{
+  background-image: url('images/music\ studio.jpg');
+  background-size: cover;
+}
+
+.services .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
 .services .boxes .box:hover{
   background: #4070f4;
   color: #fff;
@@ -385,6 +422,7 @@ section .button button:hover{
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p{
+  background-color: black;
   color: #fff;
 }
 /* Contact Me CSS */
@@ -399,6 +437,9 @@ section .button button:hover{
   width: 80%;
   text-align: center;
   margin: auto;
+}
+.info_item h6{
+  font-size: 1.1em;
 }
 
 /* Footer CSS */
@@ -582,7 +623,7 @@ footer .text span a:hover{
   padding: 3px;
   padding-left: 5px;
   padding-right: 5px;
-  color: green;
+  color: rgb(0, 0, 0);
 }
 
 /* Responsive Media Query */
